@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek tablo şekillendirme</title>
+    <style>
+        table,td,th,tr{
+            border: solid red 3px;
+            border-collapse: collapse;
+            border-radius 75px;
+        }
+        table{
+            width: 75%;
+            margin: 0 auto;
+            font-size: 1.5em;
+        }
+        th,td{
+            padding: 10px;
+        }
+        thead tr{
+            background-color: seagreen;
+            color: white;
+        }
+        tbody tr{
+            text-align: center;
+            
+        }
+        tbody tr:nth-child(even){
+            background-color: wheat;
+            color: blue;
+        }
+        tbody tr:nth-child(odd){
+            background-color: tomato;
+            color: yellow;
+        }
+        tbody tr :hover{
+            background-color: violet;
+            color:steelblue
+            
+        }
+        tbody tr{
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>iş</th>
+                <th>Maaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilgisayar Mühendisi</td>
+                <td>4500 TL</td>
+            </tr>
+            <tr>
+                <td>Fatih</td>
+                <td>İnşaatcı</td>
+                <td>4300 TL</td>
+            </tr>
+            <tr>
+                <td>Ahmet</td>
+                <td>Oduncu</td>
+                <td>6500 TL</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>Madenci</td>
+                <td>3800 TL</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
